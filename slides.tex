@@ -7,9 +7,10 @@
 %---------------------------------------------------------%
 
 \documentclass[handout,t]{beamer}
-% Para cambiar el lenguage del documento
-\usepackage[portuges]{babel}
-% Para aceptar caracteres utf8 (necesario para idioma español)
+% Para setear el lenguaje a español
+\usepackage[spanish]{babel}
+% Para aceptar caracteres utf8
+% (necesario para idioma español)
 \usepackage[utf8]{inputenc}
 % Para seguir las normas ABNT para citas y referencias
 \usepackage[alf]{abntex2cite}
@@ -19,9 +20,9 @@
 \usepackage{float}
 % Para ajustar las dimensiones de la página
 \usepackage{geometry}
-% Para formatear la estructura e información de fórmulas matemáticas
+% Para formatear la estructura e información de fórmulas % matemáticas
 \usepackage{amsmath}
-% Para incluir simbolos especiales en fórmulas matemáticas
+% Para incluir símbolos especiales en fórmulas matemáticas
 \usepackage{amssymb}
 % Para incluir links a las referencias
 \usepackage{url}
@@ -37,48 +38,44 @@
 \usepackage{capt-of}
 % Para definir el tema del slide
 \usetheme{Berlin}
-% Para difinir colores y background
+% Para definir colores y background
 \usecolortheme{ufrn}
 % Para enumerar las figuras
 \setbeamertemplate{caption}[numbered]
 
 % Título
-\title[SUBTÍTULO]{
-	TÍTULO}
+\title[Mi proyecto genial]{
+	Mi proyecto genial}
 % Data
-\date{
-	DATA}
+\date{Junio de 2018}
 % Autores
-\author[AUTOR]{
-	Autor 01 \inst{1}\\
-	\vspace{0.25cm}
-	Autor 02 \inst{2}}
+\author[Pepe Poroto]{
+	Pepe Poroto}
 % Instituto
-\institute[INSTITUTO]{
-	\inst{1}%
-	\url{usuario@mail.com}\\
+\institute[FIUBA]{
+	\url{pporoto@gmail.com}\\
 	\vspace{0.25cm}
-	\inst{2}%
-	Departamento\\
-	Universidade}
-% Logo en el canto inferior derecho
-\pgfdeclareimage[height=0.7cm]{logo_UFRN}{figuras/logo_UFRN}
+	Facultad de Ingeniería\\
+	Universidad de Buenos Aires}
+
+% Logo en el canto inferior derecho.
+\pgfdeclareimage[height=0.8cm]{logo_FIUBA}{figuras/logo_FIUBA}
 \logo{
 	\vspace*{-0.25cm}
-	\pgfuseimage{logo_UFRN}
+	\pgfuseimage{logo_FIUBA}
 	\hspace*{-0.05cm}}
 
 
 \begin{document}
-% Sumario
+% Indice
 \frame{\titlepage}
 \section[]{}
-\begin{frame}{Sumário}
+\begin{frame}{ÍNDICE}
 	\tableofcontents
 \end{frame}
 
 % Introducción
-\include{tex/introducao/introducao}
+\include{tex/introduccion/introduccion}
 
 % Metodología
 \include{tex/metodologia/metodologia}
@@ -87,7 +84,7 @@
 \include{tex/resultados/resultados}
 
 % Conclusión
-\include{tex/conclusao/conclusao}
+\include{tex/conclusion/conclusion}
 
 % Referencias
 \include{tex/referencias/referencias}
