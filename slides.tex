@@ -1,44 +1,45 @@
-%--------------------------------------------%
-% Template Beamer para Apresentações da UFRN %
-% by alcemygvseverino@gmail.com              %
-% Baseado em MIT Beamer Template			 %
-% versao 1.1								 %
-% Atualizado em 14/05/2016					 %
-%--------------------------------------------%
+%---------------------------------------------------------%
+% Template Beamer para presentaciones de la CESE - FIUBA  %
+% by apojomovsky@gmail.com                                %
+% Basado en el MIT Beamer Template                        %
+% versión 1.0                                             %
+% Actualizado el 10/06/2018			                	  %
+%---------------------------------------------------------%
+
 \documentclass[handout,t]{beamer}
-% Para alterar a linguagem do documento
+% Para cambiar el lenguage del documento
 \usepackage[portuges]{babel}
-% Para aceitar caracteres especias deretamente do teclado
+% Para aceptar caracteres utf8 (necesario para idioma español)
 \usepackage[utf8]{inputenc}
-% Para seguir as normas da ABNT de citacao e referencias
+% Para seguir las normas ABNT para citas y referencias
 \usepackage[alf]{abntex2cite}
 % Para incluir figuras
 \usepackage{graphicx}
-% Para melhor ajuste da posisao das figuras
+% Para mejorar el ajuste de la posición de las figuras
 \usepackage{float}
-% Para ajustar as dimensoes do layout da pagina
+% Para ajustar las dimensiones de la página
 \usepackage{geometry}
-% Para formatar estrutura e informacoes de formulas matematicas
+% Para formatear la estructura e información de fórmulas matemáticas
 \usepackage{amsmath}
-% Para incluir simbolos especiais em formulas matematicas
+% Para incluir simbolos especiales en fórmulas matemáticas
 \usepackage{amssymb}
-% Para incluir links nas referencias
+% Para incluir links a las referencias
 \usepackage{url}
 % Para incluir paginas de documentos .pdf externos
 \usepackage{pgfpages}
-% Para ajustar o estilo dos contadores
+% Para ajustar el estilo de los contadores
 \usepackage{enumerate}
-% Para modificar a cor do texto
+% Para modificar el color del texto
 \usepackage{color}
-% Para incluir condicoes
+% Para incluir condiciones
 \usepackage{ifthen}
-% Para colocar legendas em algo que nao e float
+% Para colocar subtitulos en objetos que no son float
 \usepackage{capt-of}
-% Para definir o tema do slide
+% Para definir el tema del slide
 \usetheme{Berlin}
-% Para difinir cores e background
+% Para difinir colores y background
 \usecolortheme{ufrn}
-% Para numerar as figuras
+% Para enumerar las figuras
 \setbeamertemplate{caption}[numbered]
 
 % Título
@@ -60,7 +61,7 @@
 	\inst{2}%
 	Departamento\\
 	Universidade}
-% Logo do canto inferior direito
+% Logo en el canto inferior derecho
 \pgfdeclareimage[height=0.7cm]{logo_UFRN}{figuras/logo_UFRN}
 \logo{
 	\vspace*{-0.25cm}
@@ -69,23 +70,23 @@
 
 
 \begin{document}
-% Sumário
+% Sumario
 \frame{\titlepage}
 \section[]{}
 \begin{frame}{Sumário}
 	\tableofcontents
 \end{frame}
 
-% Introducao
+% Introducción
 \include{tex/introducao/introducao}
 
-% Metodologia
+% Metodología
 \include{tex/metodologia/metodologia}
 
 % Resultados
 \include{tex/resultados/resultados}
 
-% Conclusao
+% Conclusión
 \include{tex/conclusao/conclusao}
 
 % Referencias
@@ -93,8 +94,8 @@
 
 % Agradecimentos
 \section{}
-\begin{frame}{Agradecimentos}
-	Agradeço a todos. 	
+\begin{frame}{Agradecimientos}
+	Agradezco a todos.
 \end{frame}
 
 \end{document}
